@@ -1,0 +1,99 @@
+.item_line {
+    margin: 1rem 0;
+}
+
+.about {
+    width: 90%;
+    margin: auto;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile_icon {
+    width: 300px;
+    height: 300px;
+    margin: 1rem auto;
+}
+
+.profile_icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1000px;
+}
+
+/*プロフィールの情報*/
+.profile_info {
+    margin: 2rem 1rem;
+}
+
+.profile_text p {
+    margin-bottom: 0.5rem;
+}
+
+.profile_text a {
+    padding: 0 0.5rem;
+    color: blue;
+}
+
+.mail_copy {
+    border: none;
+    outline: none;
+}
+
+/*プロフィールアイテム*/
+.profile_item {
+    margin: 1rem 0;
+}
+
+.profile_text {
+    margin: 2rem 0;
+}
+
+.profile_item span {
+    margin-right: 1rem;
+}
+
+/* SNSリンク */
+.snslink {
+    margin: 2rem 0;
+}
+
+.snslink ul {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.snslink ul li {
+    list-style: none;
+    margin-right: 1em;
+}
+
+.snslink ul li a {
+    color: #333333;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+
+/* レスポンシブ用 */
+@media screen and (max-width: 900px) {
+    .profile {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .profile_icon {
+        width: 150px;
+        height: 150px;
+        margin: auto;
+    }
+
+    .profile_icon img {
+        width: 100%;
+        height: 100%;
+    }
+}

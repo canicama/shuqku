@@ -1,0 +1,12 @@
+html {
+    background-color: #f2f7ff;
+}
+
+.contact_form {
+    max-width: 640px;
+    margin: auto;
+}
+
+.contact_form_google {
+    width: 100%;
+}

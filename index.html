@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>祝日のホームページ</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--GoogleFonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!--GoogleFontsここまで-->
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <div class="header__logo">
+                <a href="#">
+                    <img src="" alt="ロゴ">
+                </a>
+            </div>
+            <div class="header__menu">
+                <a href="about.html">
+                    about
+                </a>
+                <a href="contact.html">
+                    contact
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="top">
+            <div class="top__contents_wrapper">
+                <ul>
+                    <li class="top__contents_item">
+                        <img src="images/FomppsBaYAAwQRQ.webp" alt="">
+                    </li>
+                    <li class="top__contents_item">
+                        <img src="images/FcFNFKlaQAEiPEy.webp" alt="">
+                    </li>
+                    <li class="top__contents_item">
+                        <img src="images/FcxtwijaMAcF4CS.webp" alt="">
+                    </li>
+                    <li class="top__contents_item">
+                        <img src="images/F14Ge4ZaQAAlJzK.jpeg" alt="">
+                    </li>
+                    <li class="top__contents_item">
+                        <img src="images/FomppsBaYAAwQRQ.webp" alt="">
+                    </li>
+                    <li class="top__contents_item">
+                        <img src="images/FcFNFKlaQAEiPEy.webp" alt="">
+                    </li>
+                    <li class="top__contents_item">
+                        <img src="images/FcxtwijaMAcF4CS.webp" alt="">
+                    </li>
+                    <li class="top__contents_item">
+                        <img src="images/F14Ge4ZaQAAlJzK.jpeg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script>
+        var grid = document.querySelector('.grid');
+
+        var msnry = new Masonry(grid, {
+            itemSelector: '.grid-item',
+            columnWidth: '.grid-sizer',
+            percentPosition: true
+        });
+
+        imagesLoaded(grid).on('progress', function () {
+            //layout Masonry after each image loads
+            msnry.layout();
+        });
+    </script>
+
+    <script charset="utf-8">
+        photoswipeSimplify.init();
+    </script>
+</body>
+
+</html>

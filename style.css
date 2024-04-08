@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color: #333333;
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+/* ヘッダー */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    width: 90%;
+    margin: auto;
+}
+
+/* ヘッダーロゴ */
+.header__logo a {
+    text-decoration: none;
+}
+
+/* ヘッダーメニュー */
+.header__menu a {
+    color: #8f8f8f;
+    text-decoration: none;
+    font-size: clamp(1rem, 0.909rem + 0.45vw, 1.25rem);
+    margin-left: 3vw;
+}
+
+/* トップページギャラリー */
+.top {
+    width: 90%;
+    margin: auto;
+}
+
+.top__contents_wrapper ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.top__contents_item {
+    list-style: none;
+    width: 25%;
+}
+
+.top__contents_item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
+
+/* p5.css 
+#sample figure {
+    margin: 0;
+    display: none;
+}
+
+
+#sample figure:target {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+#sample figure:target #overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    color: inherit;
+}
+
+#sample figure:target img {
+    animation: fadein .3s;
+}
+
+
+@keyframes fadein {
+    0% {
+
+        opacity: 0.2;
+    }
+
+    100% {
+
+        opacity: 1;
+    }
+}
+*/

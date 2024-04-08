@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about | shuqku.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+
+    <!--GoogleFonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="" alt="ロゴ">
+                </a>
+            </div>
+            <div class="header__menu">
+                <a href="about.html">
+                    about
+                </a>
+                <a href="contact.html">
+                    contact
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="about">
+            <div class="profile">
+                <div class="profile_icon">
+                    <img src="images/icon.jpeg" alt="アイコン">
+                </div>
+                <div class="profile_info">
+                    <div class="profile_name profile_item"><span>名前</span>祝日</div>
+                    <div class="profile_mailaddress profile_item">
+                        <span>メールアドレス</span>
+                        <!--メアドコピー用-->
+                        <input class="mail_copy" id="copyTarget" type="text" value="shuqku@gmail.com" readonly>
+                        <button onclick="copyToClipboard()">Copy</button>
+                        <!--メアドコピー用ここまで-->
+                    </div>
+                    <div class="profile_text profile_item">
+                        <p>絵を見ること・描くことが好きです。</p>
+                        <p>ご依頼・ご相談は<a href="contact.html">contact</a>ページからお願いいたします。</p>
+                    </div>
+                    <!--SNSリンク-->
+                    <div class="snslink profile_item">
+                        <div class="item_line">☆.。:*☆..:*゜.。:*☆..:*゜☆.☆.。:*☆..:*゜☆.</div>
+                        <h2 class="snslink_title">各種リンク</h2>
+                        <ul>
+                            <li>
+                                <a target="_blank" href="https://twitter.com/shuqku">X(Twitter)</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.instagram.com/shuqku">Instagram</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://skeb.jp/@shuqku">Skeb</a>
+                            </li>
+                        </ul>
+                        <div class="item_line">☆.。:*☆..:*゜.。:*☆..:*゜☆.☆.。:*☆..:*゜☆.</div>
+                    </div>
+                    <!--SNSリンクここまで-->
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+    <script>
+        function copyToClipboard() {
+            // コピー対象をJavaScript上で変数として定義する
+            var copyTarget = document.getElementById("copyTarget");
+
+            // コピー対象のテキストを選択する
+            copyTarget.select();
+
+            // 選択しているテキストをクリップボードにコピーする
+            document.execCommand("Copy");
+
+            // コピーをお知らせする
+            alert("メールアドレスをコピーしました！ : " + copyTarget.value);
+        }
+    </script>
+</body>
+
+</html>
